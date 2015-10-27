@@ -88,3 +88,8 @@ activate :s3_sync do |s3_sync|
   s3_sync.prefix                     = ''
   s3_sync.version_bucket             = false
 end
+
+#Add GA tracking
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-69359135-1'
+end
