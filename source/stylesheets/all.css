@@ -1,39 +1,63 @@
 @charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Sumana);
 
 body {
-  background: #d4d4d4 url("../images/background.png");
+  background: #f6f6f6 url("../images/background.png");
   text-align: center;
-  font-family: sans-serif; }
+  font-family: 'Sumana', serif; }
 
 h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
+  color: #3E3E3E;
+  font-size: 52px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  # background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
+  padding: 300px 0 0;
   margin: 0; }
 
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  src: url('/type/MonoSocialIconsFont-1.10.eot');
+  src: url('/type/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'), 
+       url('/type/MonoSocialIconsFont-1.10.woff') format('woff'), 
+       url('/type/MonoSocialIconsFont-1.10.ttf') format('truetype'), 
+       url('/type/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+  src: url('/type/MonoSocialIconsFont-1.10.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.symbol, a.symbol:before {
+  font-family: 'Mono Social Icons Font';
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+a.symbol:before {
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 130%;
+}
+
 .doc {
-  font-size: 14px;
+  font-size: 28px;
   margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
   .doc a {
-    color: rgba(0, 0, 0, 0.3); }
+    color: rgba(0, 0, 0, 0.8); 
+    text-decoration: none}
     .doc a:hover {
       color: #666; }
 
 .welcome {
   -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+  -webkit-animation-duration: 1.9s; }
 
 @-webkit-keyframes welcome {
   from {
